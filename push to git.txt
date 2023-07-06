@@ -1,0 +1,22 @@
+1.make a repo in git
+2.install git
+3.goto folder where your file is located --> right click--> gitbash
+4.write command to create user and email
+git config --global user.name "faheem"
+git config --global user.email "...@gmail.com"
+
+5. create a ignore-file to add the folders name which has to be ignored ,command  "touch .gitignore"
+example : you have node file "node_module" which is not be uploaded
+goto gitignore file and write "node_module/"
+
+6.write "get init " , this will initialize and creates .git file
+7. git add .
+8. git commit -m "Initial commit"
+9. git status (to check git status)
+10. go to git repo and click ssh and copy that id
+11. in git bash -- "git remote add origin (paste the id)"
+12. ssh-keygen -t ed25519 -C "your_email@example.com"
+12. your public key , copy tht path
+13. cat paste the path to see the key
+14. copy the key and paste in ---github setting--ssh keys--new ssh -- paste the key
+15. git push origin master
